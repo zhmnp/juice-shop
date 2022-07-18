@@ -16,6 +16,6 @@ jobs:
         uses: zaproxy/action-baseline@v0.3.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target: 'https://dashboard.heroku.com/apps/mnp-juice-test/resources'
+          target: 'https://mnp-juice-test.herokuapp.com/#/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a -j'
